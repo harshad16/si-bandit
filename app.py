@@ -35,6 +35,7 @@ from thoth.common import init_logging
 from thoth.analyzer import __version__ as __analyzer__version__
 from thoth.common import __version__ as __common__version__
 from thoth.python import __version__ as __python__version__
+from thoth.python import Source
 
 __component_version__ = (
     f"{si_bandit_version}+"
@@ -45,8 +46,6 @@ __component_version__ = (
 _LOGGER = logging.getLogger(si_bandit_title)
 _LOGGER.info("SI Bandit v%s", __component_version__)
 
-
-from thoth.python import Source
 
 init_logging()
 
